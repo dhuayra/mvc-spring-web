@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img src="https://spring.io/img/projects/spring-boot.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Spring Web - MVC
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Content</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active bg-warning-subtle" href="/users">Users</a>
+                        </li>                        
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="vh-100">
+        <svg class="border shadow-md dark:border-slate-700" viewBox="0 0 503.36 503.36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width: 100%; height: 100%;"><rect class="bg" id="bg" x="0" y="0" width=100% height=100% fill="#ffffff"></rect><g transform="rotate(0 251.68 251.68)"><path d="M -351.68 -32.92 S -185.84 -64.38
+            0.00 -32.92 57.68 -64.38
+            351.68 -32.92 517.52 -64.38
+            703.36 -32.92 869.20 -64.38
+            1055.04 -32.92 h 110 V 703.36 H -351.68 Z" fill="#FCFCFC" id="-1"></path><path d="M -351.68 30.00 S -185.84 -19.00
+            0.00 30.00 165.84 -6.00
+            351.68 30.00 468.36 -1.46
+            703.36 30.00 869.20 -1.46
+            1055.04 30.00 h 110 V 703.36 H -351.68 Z" fill="#f5f5f5" id="0"></path><path d="M -351.68 92.92 S -185.84 51.92
+            0.00 92.92 165.84 49.92
+            351.68 92.92 517.52 61.46
+            703.36 92.92 869.20 40.92
+            1055.04 92.92 h 110 V 703.36 H -351.68 Z" fill="#eeeeee" id="1"></path><path d="M -351.68 155.84 S -218.00 124.38
+            0.00 155.84 -0.32 124.38
+            351.68 155.84 495.36 116.84
+            703.36 155.84 697.04 109.84
+            1055.04 155.84 h 110 V 703.36 H -351.68 Z" fill="#e7e7e7" id="2"></path><path d="M -351.68 218.76 S -236.00 187.30
+            0.00 218.76 155.68 187.30
+            351.68 218.76 517.52 174.76
+            703.36 218.76 869.20 187.30
+            1055.04 218.76 h 110 V 703.36 H -351.68 Z" fill="#e0e0e0" id="3"></path><path d="M -351.68 281.68 S -338.00 250.22
+            0.00 281.68 165.84 250.22
+            351.68 281.68 517.52 250.22
+            703.36 281.68 869.20 222.68
+            1055.04 281.68 h 110 V 703.36 H -351.68 Z" fill="#d9d9d9" id="4"></path><path d="M -351.68 344.60 S -298.00 305.60
+            0.00 344.60 165.84 313.14
+            351.68 344.60 517.52 307.60
+            703.36 344.60 869.20 313.14
+            1055.04 344.60 h 110 V 703.36 H -351.68 Z" fill="#d2d2d2" id="5"></path><path d="M -351.68 407.52 S -353.00 376.06
+            0.00 407.52 164.68 353.52
+            351.68 407.52 517.52 347.52
+            703.36 407.52 869.20 348.52
+            1055.04 407.52 h 110 V 703.36 H -351.68 Z" fill="#cbcbcb" id="6"></path><path d="M -351.68 470.44 S -276.00 434.44
+            0.00 470.44 165.84 438.98
+            351.68 470.44 423.36 438.98
+            703.36 470.44 869.20 437.44
+            1055.04 470.44 h 110 V 703.36 H -351.68 Z" fill="#c4c4c4" id="7"></path></g></svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
